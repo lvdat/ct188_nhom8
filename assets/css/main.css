@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+body{
+    padding-top: 3em;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.header__content{
+    list-style-type: none;
+    border: 1px solid #d6b7eb;
+    background-color: #e9d8f4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.header__content--li{
+    /* Dùng float căn nav ra */
+    float: left;
+}
+.header__content--li__link{
+    display: block;
+    padding: 14px 16px;
+    color: #000;
+    text-decoration: none;
+}
+.header__content--li__link:hover{
+    /* Khi rê chuột vào navbar */
+    color: white;
+    background-color: #db7093;
+    font-weight: bold;
+}
+
+.slider{
+    clear: both;
+}
