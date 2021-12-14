@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-}
+* {box-sizing: border-box}
 
 body{
     padding-top: 3em;
@@ -38,4 +36,65 @@ body{
 
 .slider{
     clear: both;
+}
+.slider__container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.slider__container--content{
+    /* ẩn đi */
+    display: none;
+}
+.slider__container--content.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1}
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slider__container--content__img{
+    max-width: 100%;
+}
+.slider__container--prev, .slider__container--next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+    padding: 16px;
+}
+.slider__container--next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider__container--prev:hover, .slider__container--next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slider__pagination{
+    text-align: center;
+}
+.slider__pagination--dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin: 0 2px;
+}
+.slider__pagination--dot.active, .slider__pagination--dot:hover{
+    background-color: #717171;
 }
