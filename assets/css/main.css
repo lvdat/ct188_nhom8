@@ -1,7 +1,14 @@
 * {box-sizing: border-box}
 
+:root{
+    --blue: #2d4271;
+    --white: #fff;
+}
+
 body{
     padding-top: 3em;
+    font-family: Roboto, sans-serif;
+    max-width: 1366px;
 }
 
 .header{
@@ -11,11 +18,12 @@ body{
 }
 .header__content{
     list-style-type: none;
-    border: 1px solid #d6b7eb;
-    background-color: #e9d8f4;
+    border: none;
+    background-color: var(--white);
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: 1px 1px #888888;
 }
 .header__content--li{
     /* Dùng float căn nav ra */
@@ -32,6 +40,14 @@ body{
     color: white;
     background-color: #db7093;
     font-weight: bold;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--blue);
+    margin-top: 5px;
 }
 
 .slider{
@@ -66,14 +82,14 @@ body{
 .slider__container--prev, .slider__container--next{
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     user-select: none;
     border-radius: 0 3px 3px 0;
-    padding: 16px;
+    padding: 14px;
 }
 .slider__container--next{
     right: 0;
@@ -84,6 +100,7 @@ body{
 }
 .slider__pagination{
     text-align: center;
+    margin-top: 4px;
 }
 .slider__pagination--dot{
     cursor: pointer;
