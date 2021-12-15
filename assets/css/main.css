@@ -2,6 +2,8 @@
 
 body{
     padding-top: 3em;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .header{
@@ -16,23 +18,88 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+   
 }
+
+.header__content--down{
+    position: absolute;    
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color:  #db7093 ;
+    display: none;
+    
+}
+
+.header__content li:hover .header__content--down{
+    display: block;
+}
+
+.header__content--down a{
+    text-decoration: none;
+    padding: 30px;
+    line-height: 36px;
+    color: #fff;
+    
+}
+
 .header__content--li{
     /* Dùng float căn nav ra */
     float: left;
 }
+
+
 .header__content--li__link{
-    display: block;
+    display: inline-block;
     padding: 14px 16px;
     color: #000;
     text-decoration: none;
 }
+
+.header__content>li:hover>a,
 .header__content--li__link:hover{
     /* Khi rê chuột vào navbar */
     color: white;
     background-color: #db7093;
     font-weight: bold;
 }
+
+.header__content--search__user{
+    font-weight: 300;
+}
+
+.header__content--search__form{
+    display: inline;
+    background-color: #fff;
+    padding: 8px;
+    border: 2px solid #fdc432;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.header__content--search__text{
+    border: none;
+    outline: none;
+}
+
+
+
+.header__content--search{
+    float: right;
+    padding: 14px 16px;
+    color: #000;
+}
+
+.title{
+    padding-top: 46px;
+   color: #db7093;
+   font-weight: bold;
+   font-size: 24px;
+}
+
+.categories__title{
+    color: #db7093;
+    font-size: 24px;
+}
+
 
 .slider{
     clear: both;
@@ -41,11 +108,17 @@ body{
     max-width: 100%;
     position: relative;
     margin: auto;
+    padding-left: 8px;
+    padding-right: 16px;
+    
 }
 .slider__container--content{
     /* ẩn đi */
-    display: none;
+   display: none;
+   
 }
+
+
 .slider__container--content.fade{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -62,6 +135,7 @@ body{
 }
 .slider__container--content__img{
     max-width: 100%;
+    
 }
 .slider__container--prev, .slider__container--next{
     cursor: pointer;
@@ -97,4 +171,51 @@ body{
 }
 .slider__pagination--dot.active, .slider__pagination--dot:hover{
     background-color: #717171;
+}
+
+.categories__element--content__detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor__tour{
+    width: 32%;
+    border: 1px solid rgba(0, 0, 0,0.5);
+    border-radius: 8px;
+}
+
+.infor__tour img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.infor__tour p{
+    padding: 8px 8px;
+}
+
+.infor__tour--address{
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.infor__tour i{
+    width: 24px;
+}
+
+.submit{
+    padding: 24px 24px;
+    float: right;
+   
+    
+}
+
+.submit button{
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
 }

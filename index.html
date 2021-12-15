@@ -3,20 +3,40 @@
     <head>
         <title>Web nhóm 8</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/reset.css" />
-        <link rel="stylesheet" href="/assets/css/main.css" />
-        <script src="/assets/js/main.js"></script>
-        <script src="/assets/js/slider.js"></script>
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/slider.js"></script>
     </head>
     <body>
         <nav class="header">
+            
             <ul class="header__content">
+                
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
+                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết
+                    <i class="fas fa-chevron-down arrow__down"></i></a>
+                    <ul class="header__content--down">
+                        <li><a href="">Chi tiết</a></li>
+                        <li><a href="">Chi tiết</a></li>
+                        <li><a href="">Chi tiết</a></li>
+                    </ul>
+                </li>
+                <div class="header__content--search">
+                    <form action="" method="post">
+                        <div class="header__content--search__form">
+                        <input type="text" class="header__content--search__text" placeholder="Tìm kiếm...">
+                        <i class="fas fa-search header__content--search__icon"></i>
+                        </div>
+                        <i class="fas fa-user header__content--search__user"></i>
+                    </form>
+                </div>
             </ul>
+            
         </nav>
         <h2 class="title">
             KHUYẾN MÃI
@@ -24,13 +44,13 @@
         <div class="slider">
             <div class="slider__container">
                 <div class="slider__container--content fade">
-                    <img src="/assets/image/banner-vung-xanh(1).jpg" alt="slide 1" class="slider__container--content__img">
+                    <img src="assets/image/banner-vung-xanh(1).jpg" alt="slide 1" class="slider__container--content__img">
                 </div>
                 <div class="slider__container--content fade">
-                    <img src="/assets/image/combo-quy-nhon-du-lich-viet-2.jpg" alt="slide 1" class="slider__container--content__img">
+                    <img src="assets/image/combo-quy-nhon-du-lich-viet-2.jpg" alt="slide 1" class="slider__container--content__img">
                 </div>
                 <div class="slider__container--content fade">
-                    <img src="/assets/image/du-lich-hanh-huong-du-lich-viet-1.jpg" alt="slide 1" class="slider__container--content__img">
+                    <img src="assets/image/du-lich-hanh-huong-du-lich-viet-1.jpg" alt="slide 1" class="slider__container--content__img">
                 </div>
                 <a class="slider__container--prev" onclick="plus(-1)">&#10094;</a>
                 <a class="slider__container--next" onclick="plus(1)">&#10095;</a>
@@ -49,6 +69,52 @@
             <div class="categories__element">
                 <div class="categories__element--content">
                     du lịch xuyên việc
+                    <div class="categories__element--content__detail">
+                        <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/hue/non%20bai%20tho/Cau_Truong_Tien_Song_Huong-cr-215x150.jpeg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Miền Trung
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 5 và thứ 7 hàng tuần</p>
+                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+                            
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                         <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Ha%20Noi/PLG8FA1MW2_OM180M1FYJ_ho-hoan-kiem-cr-215x150.jpg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Hà Nội
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 2 và thứ 6 hàng tuần</p>
+                            <p><i class="far fa-clock"></i>Thời gian:1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                        <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Mekong/cho_noi_cai_be_7-cr-215x150.jpg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Miền Tây
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành: Thứ 4 và chủ nhật</p>
+                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                 <div class="categories__element--content">
                     combo du lịch
