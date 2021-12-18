@@ -1,3 +1,6 @@
+<!--
+    Version: 1
+-->
 <!DOCTYPE html>
 <html lang="vi">
     <head>
@@ -5,17 +8,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/assets/css/reset.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     </head>
     <body>
         <nav class="header">
             <ul class="header__content">
+                <li class="header__content--logo"><img src="/assets/image/logo.png" /></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
+                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết
+                    <i class="fas fa-chevron-down arrow__down"></i></a>
+                    <ul class="header__content--down">
+                        <li><a href="">Chi tiết</a></li>
+                        <li><a href="">Chi tiết</a></li>
+                        <li><a href="">Chi tiết</a></li>
+                    </ul>
+                </li>
+                <div class="header__content--search">
+                    <form action="" method="post">
+                        <div class="header__content--search__form">
+                            <input type="text" class="header__content--search__text" placeholder="Tìm kiếm...">
+                            <i class="fas fa-search header__content--search__icon"></i>
+                        </div>
+                        <i class="fas fa-user header__content--search__user"></i>
+                    </form>
+                </div>
+                <a href="javascript:void(0);" class="header__content--toogle" onclick="toogle()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </ul>
         </nav>
         <h3 class="title">
@@ -48,13 +73,180 @@
         <div class="categories">
             <div class="categories__element">
                 <div class="categories__element--content">
-                    du lịch xuyên việc
+                    <div class="categories__element--content__title"> du lịch xuyên việc </div>
+                    <div class="categories__element--content__detail">
+                        <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/hue/non%20bai%20tho/Cau_Truong_Tien_Song_Huong-cr-215x150.jpeg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Miền Trung
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 5 và thứ 7 hàng tuần</p>
+                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+                            
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                         <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Ha%20Noi/PLG8FA1MW2_OM180M1FYJ_ho-hoan-kiem-cr-215x150.jpg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Hà Nội
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 2 và thứ 6 hàng tuần</p>
+                            <p><i class="far fa-clock"></i>Thời gian:1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                        <div class="infor__tour">
+                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Mekong/cho_noi_cai_be_7-cr-215x150.jpg" alt="" class="infor__tour--img">
+                            <h2 class="infor__tour--address">
+                               Tour Sài Gòn - Miền Tây
+                            </h2>
+                            <p><i class="far fa-calendar"></i>Khởi hành: Thứ 4 và chủ nhật</p>
+                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+
+                            <div class="submit">
+                                <button>Đặt ngay</button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                 <div class="categories__element--content">
-                    combo du lịch
+                    <div class="categories__element--content__title">combo du lịch</div>
+                    <div class="infor__combo">
+                        <div class="infor__combo--element">
+                            <div class="infor__combo--element__header">
+                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/combo-du-lich-da-lat-gia-tot-du-lich-viet-1(7).jpg" alt="" class="infor__combo--img">
+                                <p class="place__start">Từ TP hồ chí minh</p>
+                                <p class="infor__combo--element__detail">
+                                    Bao gồm vé máy bay đi về + khách sạn + bữa sáng miễn phí
+                                </p>
+                            </div>
+                            <div class="infor__combo--element__content">
+                                <h2>
+                                    Khách sạn + vé máy bay
+                                </h2>
+
+                                <div class="infor__combo--element__icon">
+                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
+                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                                </div>
+                                <div class="infor__combo--element__price">
+                                    2,999,999 đ
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="infor__combo--element">
+                            <div class="infor__combo--element__header">
+                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Sapa/combo-du-lich-sapa-gia-tot-du-lich-viet(4).jpg" alt="" class="infor__combo--img">
+                                <p class="place__start">Từ TP hồ chí minh</p>
+                                <p class="infor__combo--element__detail">
+                                    Bao gồm vé xe đi về + 2 đêm ở khách sạn villa + bữa sáng miễn phí
+                                </p>
+                            </div>
+                            <div class="infor__combo--element__content">
+                                <h2>
+                                    Khách sạn villa + vé xe
+                                </h2>
+
+                                <div class="infor__combo--element__icon">
+                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
+                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                                </div>
+                                <div class="infor__combo--element__price">
+                                    1,999,999 đ
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="infor__combo--element">
+                            <div class="infor__combo--element__header">
+                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/combo-du-lich-da-lat-du-lich-viet(1).jpg" alt="" class="infor__combo--img">
+                                <p class="place__start">Từ TP hồ chí minh</p>
+                                <p class="infor__combo--element__detail">
+                                    Bao gồm vé máy bay đi về + khách sạn + bữa sáng miễn phí
+                                </p>
+                            </div>
+                            <div class="infor__combo--element__content">
+                                <h2>
+                                    Khách sạn Đà lạt + vé máy bay 
+                                </h2>
+
+                                <div class="infor__combo--element__icon">
+                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
+                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                                </div>
+                                <div class="infor__combo--element__price">
+                                    2,999,999 đ
+                                </div>
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="infor__combo--element">
+                            <div class="infor__combo--element__header">
+                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Sapa/combo-du-lich-sapa-gia-tot-du-lich-viet(4).jpg" alt="" class="infor__combo--img">
+                                <p class="place__start">Từ TP hồ chí minh</p>
+                                <p class="infor__combo--element__detail">
+                                    Bao gồm vé xe đi về + khách sạn + bữa sáng miễn phí
+                                </p>
+                            </div>
+                            <div class="infor__combo--element__content">
+                                <h2>
+                                    Khách sạn + xe Sa Pa
+                                </h2>
+
+                                <div class="infor__combo--element__icon">
+                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
+                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                                </div>
+                                <div class="infor__combo--element__price">
+                                    2,999,999 đ
+                                </div>
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="infor__combo--element">
+                            <div class="infor__combo--element__header">
+                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/du-lich-free-and-easy-da-lat-gia-tot-du-lich-viet.jpg" alt="" class="infor__combo--img">
+                                <p class="place__start">Từ TP hồ chí minh</p>
+                                <p class="infor__combo--element__detail">
+                                    Bao gồm vé xe đi về + khách sạn + bữa sáng miễn phí
+                                </p>
+                            </div>
+                            <div class="infor__combo--element__content">
+                                <h2>
+                                    Combo du lịch Đà Lạt 3 ngày
+                                </h2>
+
+                                <div class="infor__combo--element__icon">
+                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
+                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                                </div>
+                                <div class="infor__combo--element__price">
+                                    2,999,999 đ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
                 <div class="categories__element--content">
-                    thuê xe
+                    <div class="categories__element--content__title">thuê xe</div>
+
                 </div>
             </div>
         </div>
