@@ -5,6 +5,7 @@
     --blue: #2d4271;
     --white: #fff;
     --pink: rgb(228, 37, 148);
+    --black: #000;
 }
 
 /* scroll bar */
@@ -498,7 +499,7 @@ body{
 }
 
 #top_back{
-    background-color: #db7093;
+    background-color: var(--pink);
     border: none;
     border-radius: 10px;
     text-decoration: none;
