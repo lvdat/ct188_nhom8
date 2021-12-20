@@ -1,0 +1,106 @@
+<!--
+    Version: 1
+    Author: Le Van Dat, Vo Tuyet Ha.
+-->
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Web nhóm 8</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="stylesheet" href="/assets/css/reset.css" />
+        <link rel="stylesheet" href="/assets/css/grid.css" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
+    </head>
+    <body id="content">
+        <nav class="header">
+            <ul class="header__content" id="header__content">
+                <!--<li class="header__content--logo"><img src="/assets/image/logo.png" /></li>-->
+                <li class="header__content--li"><a href="/" class="header__content--li__link logo" title="Về trang chủ"><img src="/assets/image/logo.png" /></a></li>
+                <li class="header__content--li"><a href="/" class="header__content--li__link"><i class="fas fa-home"></i> TRANG CHỦ</a></li>
+                <li class="header__content--li dropdown"><a onclick="return false" class="header__content--li__link"><i class="fas fa-plane-departure"></i> DANH SÁCH TOUR
+                    <i class="fas fa-chevron-down arrow__down"></i></a>
+                    <ul class="header__content--down">
+                        <div class="row">
+                            <div class="col">
+                                <h3><i class="fas fa-star"></i> TOUR MIỀN BẮC</h3>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                                <a href="#">Du lịch Hà Nội</a>
+                            </div>
+                            <div class="col">
+                                <h3><i class="fas fa-star"></i> TOUR MIỀN TRUNG</h3>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                                <a href="#">Du lịch Thừa Thiên - Huế</a>
+                            </div>
+                            <div class="col">
+                                <h3><i class="fas fa-star"></i> TOUR MIỀN NAM</h3>
+                                <a href="#">Du lịch Cà Mau</a>
+                                <a href="#">Du lịch Hậu Giang</a>
+                                <a href="#">Du lịch Cần Thơ</a>
+                                <a href="#">Du lịch Cần Thơ</a>
+                                <a href="#">Du lịch Cần Thơ</a>
+                                <a href="#">Du lịch Cần Thơ</a>
+                                <a href="#">Du lịch Cần Thơ</a>
+                            </div>
+                            <div class="col">
+                                <h3><i class="fas fa-star"></i> ĐẶC BIỆT</h3>
+                                <a href="#">Tour giáng sinh</a>
+                                <a href="#">Tour giáng sinh</a>
+                                <a href="#">Tour giáng sinh</a>
+                                <a href="#">Tour giáng sinh</a>
+                                <a href="#">Tour giáng sinh</a>
+                                <a href="#">Tour giáng sinh</a>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
+                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
+                <div class="header__content--search">
+                    <form action="" method="post">
+                        <div class="header__content--search__form">
+                            <input type="text" class="header__content--search__text" placeholder="Tìm kiếm...">
+                            <i class="fas fa-search header__content--search__icon"></i>
+                        </div>
+                        <a href="" class="header__content--search__user login" title="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
+                        <a href="" class="header__content--search__user register" title="Đăng ký"><i class="fas fa-user-plus"></i></a>
+                    </form>
+                </div>
+                <a href="javascript:void(0);" class="header__content--toogle" onclick="nav_toogle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+            
+        </nav>
+
+
+        <div class="footer">
+            Kết nối với chúng tôi 
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a href="http://pinterest.com/"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <a href="#content" id="top_back" onclick="scrollToTop();return false"><i class="fas fa-arrow-up"></i>TOP</a>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/slider.js"></script>
+    </body>
+</html></body>
