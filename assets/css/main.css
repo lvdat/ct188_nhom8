@@ -22,6 +22,7 @@
 
 /* layout */
 body{
+<<<<<<< HEAD
     font-family: Roboto, sans-serif;
     max-width: 1366px;
     margin: auto;
@@ -67,12 +68,22 @@ body{
         width: 100%;
         height: auto;
     }
+=======
+    padding-top: 3em;
+
+    
+
+    font-family: Roboto, sans-serif;
+    max-width: 1366px;
+
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
 }
 
 .header{
     width: 100%;
     position: fixed;
     top: 0;
+<<<<<<< HEAD
     background-color: var(--white);
     z-index: 1;
     box-shadow: 1px 1px #c0bcbc;
@@ -81,9 +92,18 @@ body{
 .header__content{
     list-style-type: none;
     border: none;
+=======
+    background-image: linear-gradient(white,#db7093);
+    z-index: 1;
+}
+.header__content{
+    list-style-type: none;
+    border: none;   
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
     margin: 0;
-    padding: 0;
+    padding: 0px 0;
     overflow: hidden;
+<<<<<<< HEAD
 }
 .header__content--down{
     position: absolute;    
@@ -145,11 +165,40 @@ body{
 
 .header__content--li,
 .header__content--li__logo{
+=======
+    
+    box-shadow: 1px 1px #888888;
+
+}
+
+.header__content--down{
+    position: absolute;    
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color:  #db7093 ;
+    display: none;
+    
+}
+
+.header__content li:hover .header__content--down{
+    display: block;
+}
+
+.header__content--down a{
+    text-decoration: none;
+    padding: 30px;
+    line-height: 36px;
+    color: #fff;
+    
+}
+
+.header__content--li{
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
     /* Dùng float căn nav ra */
     float: left;
 
 }
 
+<<<<<<< HEAD
 .header__content--li__link{
     display: block;
     padding: 16px 14px;
@@ -170,6 +219,21 @@ body{
 .header__content>li:hover>.header__content--li__link:not(.logo),.header__content--search__user:hover{
     /* Khi rê chuột vào navbar, riêng logo sẽ không có hiệu ứng */
     color: var(--pink);
+=======
+
+.header__content--li__link{
+    display: inline-block;
+    padding: 14px 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__content>li:hover>a,
+.header__content--li__link:hover{
+    /* Khi rê chuột vào navbar */
+    color: white;
+    background-color: #db7093;
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
     font-weight: bold;
     border: none;
 }
@@ -281,12 +345,55 @@ body{
     }
 }
 
+
+.header__content--search__user{
+    font-weight: 300;
+}
+
+.header__content--search__form{
+    display: inline;
+    background-color: #fff;
+    padding: 4px;
+    border: 2px solid #343f3b;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.header__content--search__text{
+    border: none;
+    outline: none;
+}
+
+
+
+.header__content--search{
+    float: right;
+    padding: 14px 16px;
+    color: #000;
+}
+
+
+
+.categories__title{
+    color: #db7093;
+    font-size: 24px;
+}
+
+
+
 .title{
-    font-size: 18px;
+    
     font-weight: 700;
     line-height: 40px;
     color: var(--blue);
     margin-top: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.title b{
+    font-size: 24px;
+   
 }
 
 .slider{
@@ -296,11 +403,15 @@ body{
     max-width: 100%;
     position: relative;
     margin: auto;
+    padding-left: 8px;      
 }
 .slider__container--content{
     /* ẩn đi */
-    display: none;
+   
+   display: none;
 }
+
+
 .slider__container--content.fade{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -316,7 +427,12 @@ body{
     to {opacity: 1}
 }
 .slider__container--content__img{
+<<<<<<< HEAD
     width: 100%;
+=======
+    max-width: 100%;
+    
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
 }
 .slider__container--prev, .slider__container--next{
     cursor: pointer;
@@ -353,7 +469,13 @@ body{
 }
 .slider__pagination--dot.active, .slider__pagination--dot:hover{
     background-color: #717171;
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
 .categories__element--content__detail{
     display: flex;
     justify-content: space-between;
@@ -389,7 +511,13 @@ body{
 
 .submit{
     padding: 24px 24px;
+<<<<<<< HEAD
     float: right;   
+=======
+    float: right;
+   
+    
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
 }
 
 .submit button{
@@ -498,6 +626,7 @@ body{
     color: #000;
 }
 
+<<<<<<< HEAD
 #top_back{
     background-color: var(--pink);
     border: none;
@@ -516,3 +645,35 @@ body{
     /* display: none;*/
     color: #fff;
 }
+=======
+.back_home a{    
+    position: fixed;    
+    bottom: 5px;
+    right: 10px;
+    z-index: 100;
+    padding: 10px;
+    background-color: #db7093;
+    border-radius: 4px;
+    text-decoration: none;
+    width:60px;
+    text-align: center;
+          
+}
+
+.back_home{
+    cursor: pointer;
+}
+
+.back_home i{
+    font-size: 24px;
+    color: #fff;
+}
+
+.top_back{
+    color: #fff;
+    text-align: none;
+}
+
+
+
+>>>>>>> d22966a2f6ca4d01126da75150bf64883f75413d
