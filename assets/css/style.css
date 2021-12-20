@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+}
+
+.main{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 400px;
+    text-align: left;
+    padding: 16px 24px;
+    color: #2d4271;
+    font-size: 24px;
+    border-radius: 16px;
+    margin-top: 32px;
+}
+
+span{
+    display: block;
+}
+
+.form__input input{
+    width: 100%;
+    padding: 8px 4px;
+    border: 1px solid;
+    border-radius: 16px;
+    margin: 16px 0px;
+}
+
+.submit input{
+    background-color: #db7093;
+    cursor: pointer;
+}
+
+div:last-child{
+    font-size: 18px;
+}
+div:last-child a{
+    color: #db7093;
+}
+
+.main__change h2{
+    display: inline;
+}
+
+h3{
+    display: inline;
+    margin-left: 100px;
+
+}
+
+h3 a{
+    text-decoration: none;
+    color: #db7093;
+}
+
+.main__change{
+    margin-bottom: 16px;
+}
