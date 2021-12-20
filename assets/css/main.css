@@ -1,3 +1,7 @@
+/*
+Author: Le Van Dat, Vo Tuyet Ha.
+
+*/
 * {box-sizing: border-box}
 
 /* define css */
@@ -423,7 +427,7 @@ body{
 
 .infor__combo--element{
   display: inline;
-  width: 19% ;
+  width: 19%;
 }
 
 .infor__combo--element__header{
@@ -438,35 +442,49 @@ body{
 
 .place__start{
     position: absolute;
+    visibility: visible;
     transform: translatey(-36px);
     background-color: rgb(0,0,0,0.5);
     color: #fff;
+    transition: 0.3s;
 }
 
 .infor__combo--element__content{
     border: 1px solid rgba(0,0,0,0.3);
     margin-top: 8px;
+    z-index: 1000;
 }
-
+.infor__combo--element__content--link{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+.infor__combo--element__content--link:hover{
+    color: var(--pink);
+    font-weight: bold;
+}
 .infor__combo--element__detail{
     position: absolute;
     top: 50px;
     width: 100%;
     color: #fff;
-    display: none;
+    opacity: 0;
     text-align: center;
-    
+    transition: 0.3s;
 }
 
 .infor__combo--element__header:hover .place__start{
-    display: none;
+    transform: translateY(1px);
+    opacity: 0;
+    z-index: 999;
 }
 .infor__combo--element__header:hover .infor__combo--element__detail{
-    display: block;
+    opacity: 1;
 }
 
 .infor__combo--element__header:hover img{
-    opacity: 0.8;
+    opacity: 0.6;
+    background-image: rgba(0,0,0,0.5);
 }
 
 
@@ -478,9 +496,13 @@ body{
 }
 
 .infor__combo--element__price{
-    padding: 8px;
-    padding-left: 60%;
+    max-width: 130px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 50%;
     color: #e30051;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .infor__combo--element:hover{
