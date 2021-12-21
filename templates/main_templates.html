@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
         <link rel="stylesheet" href="/assets/css/reset.css" />
-        <link rel="stylesheet" href="/assets/css/grid.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
         <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
         <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
@@ -75,16 +74,15 @@
                         </div>
                     </ul>
                 </li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <div class="header__content--search">
                     <form action="" method="post">
                         <div class="header__content--search__form">
                             <input type="text" class="header__content--search__text" placeholder="Tìm kiếm...">
                             <i class="fas fa-search header__content--search__icon"></i>
                         </div>
-                        <a href="" class="header__content--search__user login" title="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
-                        <a href="" class="header__content--search__user register" title="Đăng ký"><i class="fas fa-user-plus"></i></a>
+                        <a href="/login.html" class="header__content--search__user login" title="Đăng nhập" alt="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
+                        <a href="/register.html" class="header__content--search__user register" title="Đăng ký" alt="Đăng ký"><i class="fas fa-user-plus"></i></a>
+                        <a href="/love.html" class="header__content--search__user cart" title="GIỎ HÀNG"><i class="fas fa-heart"></i></i><span class="cart-count" id="cart-count"></span></a>
                     </form>
                 </div>
                 <a href="javascript:void(0);" class="header__content--toogle" onclick="nav_toogle()">
@@ -95,12 +93,58 @@
         </nav>
 
 
+        <!--content-->
+
         <div class="footer">
-            Kết nối với chúng tôi 
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a href="http://pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="footer__title">
+                        Bài tập nhóm CT188
+                    </h2>
+                    <ul class="footer__content">
+                        <li class="footer__content--li">
+                            <b>Phiên bản:</b> 1.0
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Dev:</b> Le Van Dat, Vo Tuyet Ha
+                        </li>
+                        <li class="footer__content--li">
+                            <p>Trang web này sử dụng hoàn toàn bằng HTML và CSS/JavaScript thuần (ngoại trừ các icon sử dụng của thư viện Font Awesome). Trong quá trình thực hiện nhóm có tham khảo ý tưởng, hướng dẫn tại các trang web như: dulichviet.com.vn, w3school, developer.mozilla.org, stackoverflow.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h2 class="footer__title">
+                        Liên hệ
+                    </h2>
+                    <ul class="footer__content">
+                        <li class="footer__content--li">
+                            <b>Nhóm:</b> 8
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Email:</b>
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fas fa-envelope"></i> datb2012191@student.ctu.edu.vn
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fas fa-envelope"></i> hab2014567@student.ctu.edu.vn
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Source Code</b>
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fab fa-github"></i> <a href="https://github.com/lvdat/ct188_nhom8">https://github.com/lvdat/ct188_nhom8</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <a href="#content" id="top_back" onclick="scrollToTop();return false"><i class="fas fa-arrow-up"></i>TOP</a>
         <script src="/assets/js/main.js"></script>
-        <script src="/assets/js/slider.js"></script>
+        <script src="/assets/js/slide.js"></script>
+        <div class="footer__copyright">
+            2021 © Le Van Dat & Vo Tuyet Ha
+        </div>
     </body>
 </html></body>

@@ -27,34 +27,42 @@ function nav_toogle(){
     }
 }
 
-// add to cart button
+// Love Tour _ ý tưởng từ giỏ hàng
 window.onload = function(){
+    // hover vào đổi thành "Thêm vào yêu thích"
     document.onmousemove = function(e){
         var e = e || window.event, el = e.target || el.srcElement;
         if(el.id == 'xuyenviet__card--order__btn'){
             el.innerHTML = "<i class=\"far fa-heart\"></i> Thêm vào yêu thích";
         }
     }
+    //bỏ chuột ra trở về như cũ
     document.onmouseout = function(e){
         var e = e || window.event, el = e.target || el.srcElement;
         if(el.id == 'xuyenviet__card--order__btn'){
             el.innerHTML = "Đặt ngay";
         }
     }
-    updateCartCount();
+    updateCartCount(); // update lại số tour yêu thích
 }
 function addCart(id){
+    // thêm vào ds yêu thích
     products = [];
     if(localStorage.getItem('products')){
         products = JSON.parse(localStorage.getItem('products'));
-
+        if(checkDuplicateLove(id, products)){
+            // nếu đã thêm rồi thì báo lỗi
+            alert("Bạn đã thích tour này rồi!");
+            return false;
+        }
     }
     let card = document.getElementsByClassName("xuyenviet__card")[id-1];
-    products.push({'id': id, 'name': card.attributes['data-name'].value, 'image' : card.attributes['data-img'].value});
+    products.push({'id': id, 'name': card.attributes['data-name'].value, 'image' : card.attributes['data-img'].value, 'start' : card.attributes['data-time-start'].value});
     localStorage.setItem('products', JSON.stringify(products));
     updateCartCount();
 }
 function updateCartCount(){
+    // làm mới số tour yêu thích trên thanh Nav
     products = [];
     if(localStorage.getItem('products')){
         products = JSON.parse(localStorage.getItem('products'));
@@ -68,3 +76,13 @@ function updateCartCount(){
     }
     
 }
+function checkDuplicateLove(id, arr){
+    // check xem tour id đã tồn tại trong localStorage hay chưa
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].id === id){
+            return true;
+        }
+    }
+    return false;
+}
+

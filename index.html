@@ -7,10 +7,9 @@
     <head>
         <title>Web nhóm 8</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
         <link rel="stylesheet" href="/assets/css/reset.css" />
-        <link rel="stylesheet" href="/assets/css/grid.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
         <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
         <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
         <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
@@ -75,17 +74,15 @@
                         </div>
                     </ul>
                 </li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
-                <li class="header__content--li"><a href="" class="header__content--li__link">Liên kết</a></li>
                 <div class="header__content--search">
                     <form action="" method="post">
                         <div class="header__content--search__form">
                             <input type="text" class="header__content--search__text" placeholder="Tìm kiếm...">
                             <i class="fas fa-search header__content--search__icon"></i>
                         </div>
-                        <a href="" class="header__content--search__user login" title="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
-                        <a href="" class="header__content--search__user register" title="Đăng ký"><i class="fas fa-user-plus"></i></a>
-                        <a href="" class="header__content--search__user cart" title="GIỎ HÀNG"><i class="fas fa-heart"></i></i><span class="cart-count" id="cart-count"></span></a>
+                        <a href="/login.html" class="header__content--search__user login" title="Đăng nhập" alt="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
+                        <a href="/register.html" class="header__content--search__user register" title="Đăng ký" alt="Đăng ký"><i class="fas fa-user-plus"></i></a>
+                        <a href="/love.html" class="header__content--search__user cart" title="GIỎ HÀNG"><i class="fas fa-heart"></i></i><span class="cart-count" id="cart-count"></span></a>
                     </form>
                 </div>
                 <a href="javascript:void(0);" class="header__content--toogle" onclick="nav_toogle()">
@@ -121,7 +118,7 @@
                     <div class="categories__element--content__title"> du lịch xuyên việt </div>
                     <div class="row">
                         <div class="col-3">
-                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" data-time-start="Thứ 5 và thứ 7 hàng tuần">
                                 <div class="xuyenviet__card--header">
                                     <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
                                 </div>
@@ -141,7 +138,7 @@
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Đà Nẵng - Miền Nam" data-img="https://media-cdn.laodong.vn/storage/newsportal/2020/4/28/801886/1-5.jpg" >
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Đà Nẵng - Miền Nam" data-img="https://media-cdn.laodong.vn/storage/newsportal/2020/4/28/801886/1-5.jpg" data-time-start="Thứ 6 và Chủ Nhật hàng tuần">
                                 <div class="xuyenviet__card--header">
                                     <img src="https://media-cdn.laodong.vn/storage/newsportal/2020/4/28/801886/1-5.jpg" alt="" class="xuyenviet__card--header__img">
                                 </div>
@@ -161,18 +158,18 @@
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nội - Cà Mau" data-img="https://fileapi.surego.vn//Upload/NewsImage/R637096778929414583.png" data-time-start="Thứ 5 và Chủ Nhật hàng tuần">
                                 <div class="xuyenviet__card--header">
-                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
+                                    <img src="https://fileapi.surego.vn//Upload/NewsImage/R637096778929414583.png" alt="" class="xuyenviet__card--header__img">
                                 </div>
                                 <h2 class="xuyenviet__card--title">
-                                    Tour Sài Gòn - Miền Trung
+                                    Tour Hà Nội - Cà Mau
                                 </h2>
 
                                 <div class="xuyenviet__card--info">
-                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và Chủ Nhật hàng tuần</li>
                                     <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
-                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Sài Gòn</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
                                 </div>
                                 
                                 <div class="xuyenviet__card--order">
@@ -181,18 +178,18 @@
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nội - Sa Pa - Đà Nẵng" data-img="https://media-cdn.laodong.vn/Storage/NewsPortal/2021/2/4/877470/Sa-Pa-1.jpg" data-time-start="Thứ 4 và thứ 6 hàng tuần">
                                 <div class="xuyenviet__card--header">
-                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
+                                    <img src="https://media-cdn.laodong.vn/Storage/NewsPortal/2021/2/4/877470/Sa-Pa-1.jpg" alt="" class="xuyenviet__card--header__img">
                                 </div>
                                 <h2 class="xuyenviet__card--title">
-                                    Tour Sài Gòn - Miền Trung
+                                    Tour Hà Nội - Sa Pa - Đà Nẵng
                                 </h2>
 
                                 <div class="xuyenviet__card--info">
-                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 4 và thứ 6 hàng tuần</li>
                                     <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
-                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Sài Gòn</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
                                 </div>
                                 
                                 <div class="xuyenviet__card--order">
@@ -201,161 +198,233 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="categories__element--content">
-                    <div class="categories__element--content__title">combo du lịch</div>
-                    <div class="infor__combo">
-                        <div class="infor__combo--element">
-                            <div class="infor__combo--element__header">
-                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/combo-du-lich-da-lat-gia-tot-du-lich-viet-1(7).jpg" alt="" class="infor__combo--img">
-                                <p class="place__start">Từ TP hồ chí minh</p>
-                                <p class="infor__combo--element__detail">
-                                    Bao gồm vé máy bay đi về + khách sạn + bữa sáng miễn phí
-                                </p>
-                            </div>
-                            <div class="infor__combo--element__content">
-                                <a href="" class="infor__combo--element__content--link"><h2>Khách sạn + vé máy bay</h2></a>
 
-                                <div class="infor__combo--element__icon">
-                                    <p><i class="fas fa-clock"></i> 3 ngày 2 đêm </p>
-                                    <p><i class="fas fa-calendar-check"></i> Hằng ngày</p>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Cà Mau - Đà Lạt" data-img="https://vietsensetravel.com/view/at_da-lat-fresh-don-tim-du-khach-voi-ve-dep-la-cua-fresh-garden-da-lat_fad6aa13d68b2a193781f234eb4b0d95.jpg" data-time-start="Thứ 2 và thứ 5 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://vietsensetravel.com/view/at_da-lat-fresh-don-tim-du-khach-voi-ve-dep-la-cua-fresh-garden-da-lat_fad6aa13d68b2a193781f234eb4b0d95.jpg" alt="" class="xuyenviet__card--header__img">
                                 </div>
-                                <div class="infor__combo--element__price">
-                                    2,999,999đ
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="infor__combo--element">
-                            <div class="infor__combo--element__header">
-                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Sapa/combo-du-lich-sapa-gia-tot-du-lich-viet(4).jpg" alt="" class="infor__combo--img">
-                                <p class="place__start">Từ TP hồ chí minh</p>
-                                <p class="infor__combo--element__detail">
-                                    Bao gồm vé xe đi về + 2 đêm ở khách sạn villa + bữa sáng miễn phí
-                                </p>
-                            </div>
-                            <div class="infor__combo--element__content">
-                                <h2>
-                                    Khách sạn villa + vé xe
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Cà Mau - Đà Lạt
                                 </h2>
-
-                                <div class="infor__combo--element__icon">
-                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
-                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 2 và thứ 5 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Cà Mau</li>
                                 </div>
-                                <div class="infor__combo--element__price">
-                                    1,999,999đ
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(5)">Đặt ngay</button>
                                 </div>
                             </div>
                         </div>
-                    
-                    
-                        <div class="infor__combo--element">
-                            <div class="infor__combo--element__header">
-                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/combo-du-lich-da-lat-du-lich-viet(1).jpg" alt="" class="infor__combo--img">
-                                <p class="place__start">Từ TP hồ chí minh</p>
-                                <p class="infor__combo--element__detail">
-                                    Bao gồm vé máy bay đi về + khách sạn + bữa sáng miễn phí
-                                </p>
-                            </div>
-                            <div class="infor__combo--element__content">
-                                <h2>
-                                    Khách sạn Đà lạt + vé máy bay 
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nội - Nha Trang" data-img="http://wiki-travel.com.vn/Uploads/picture/Viet_Dung-184602034655-nha-trang.jpg" data-time-start="Thứ 4 và thứ 6 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="http://wiki-travel.com.vn/Uploads/picture/Viet_Dung-184602034655-nha-trang.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Hà Nội - Nha Trang
                                 </h2>
-
-                                <div class="infor__combo--element__icon">
-                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
-                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 4 và thứ 6 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
                                 </div>
-                                <div class="infor__combo--element__price">
-                                    2,999,999 đ
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(6)">Đặt ngay</button>
                                 </div>
                             </div>
                         </div>
-                   
-                    
-                        <div class="infor__combo--element">
-                            <div class="infor__combo--element__header">
-                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Sapa/combo-du-lich-sapa-gia-tot-du-lich-viet(4).jpg" alt="" class="infor__combo--img">
-                                <p class="place__start">Từ TP hồ chí minh</p>
-                                <p class="infor__combo--element__detail">
-                                    Bao gồm vé xe đi về + khách sạn + bữa sáng miễn phí
-                                </p>
-                            </div>
-                            <div class="infor__combo--element__content">
-                                <h2>
-                                    Khách sạn + xe Sa Pa
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nội  - Đà Nẵng - Vũng Tàu" data-img="https://media.baodautu.vn/Images/manhcuong/2020/04/29/ba-ria---vung-tau-thuc-hien-dong-bo-nhieu-giai-phap-phat-trien1588170854.jpg" data-time-start="Thứ 3 và thứ 6 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://media.baodautu.vn/Images/manhcuong/2020/04/29/ba-ria---vung-tau-thuc-hien-dong-bo-nhieu-giai-phap-phat-trien1588170854.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Hà Nội - Đà Nẵng - Vũng Tàu
                                 </h2>
-
-                                <div class="infor__combo--element__icon">
-                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
-                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 3 và thứ 6 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
                                 </div>
-                                <div class="infor__combo--element__price">
-                                    2,999,999 đ
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(7)">Đặt ngay</button>
                                 </div>
                             </div>
                         </div>
-                   
-                    
-                        <div class="infor__combo--element">
-                            <div class="infor__combo--element__header">
-                                <img src="https://dulichviet.com.vn/thumbs/0/278x229/images/bandidau/NOI-DIA/Da-Lat/du-lich-free-and-easy-da-lat-gia-tot-du-lich-viet.jpg" alt="" class="infor__combo--img">
-                                <p class="place__start">Từ TP hồ chí minh</p>
-                                <p class="infor__combo--element__detail">
-                                    Bao gồm vé xe đi về + khách sạn + bữa sáng miễn phí
-                                </p>
-                            </div>
-                            <div class="infor__combo--element__content">
-                                <h2>
-                                    Combo du lịch Đà Lạt 3 ngày
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Cà Mau - Châu Đốc - Hà Tiên" data-img="https://lamviennuicam.com/wp-content/uploads/2020/04/chau-doc-_1.jpg" data-time-start="Thứ 2 và thứ 7 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://lamviennuicam.com/wp-content/uploads/2020/04/chau-doc-_1.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Cà Mau - Châu Đốc - Hà Tiên
                                 </h2>
-
-                                <div class="infor__combo--element__icon">
-                                    <p><i class="far fa-calendar"></i>3 ngày 2 đêm </p>
-                                    <p><i class="far fa-clock"></i>Hằng ngày</p>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 2 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
                                 </div>
-                                <div class="infor__combo--element__price">
-                                    2,999,999 đ
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(8)">Cà Mau</button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                   
-                </div>
-                <div class="categories__element--content">
-                    <div class="categories__element--content__title">thuê xe</div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Cà Mau - Đà Lạt" data-img="http://hanoimoi.com.vn/Uploads/images/tuandiep/2021/09/07/dulich.JPG" data-time-start="Thứ 4 và Chủ Nhật hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="http://hanoimoi.com.vn/Uploads/images/tuandiep/2021/09/07/dulich.JPG" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Hà Nội - Phú Quốc
+                                </h2>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 4 và Chủ Nhật hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(9)">Đặt ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nôi - Cao bằng" data-img="https://cdnmedia.baotintuc.vn/Upload/a7srThwxbojBCucvUWgnxA/files/2021/08/23/ban-gioc-2382021.jpg" data-time-start="Chủ nhật hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://cdnmedia.baotintuc.vn/Upload/a7srThwxbojBCucvUWgnxA/files/2021/08/23/ban-gioc-2382021.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Hà Nội - Cao bằng
+                                </h2>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Chủ nhật hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(10)">Đặt ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Hà Nội  - Huế - Cà Mau" data-img="https://vcdn-vnexpress.vnecdn.net/2021/05/10/dn1-7717-1620653562.jpg" data-time-start="Thứ 3 và thứ 6 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://vcdn-vnexpress.vnecdn.net/2021/05/10/dn1-7717-1620653562.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Hà Nội - Huế - Cà Mau
+                                </h2>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 3 và thứ 6 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Hà Nội</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(11)">Đặt ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Cà Mau - Quảng Ninh" data-img="https://statics.vinpearl.com/hinh-anh-kinh-nghiem-du-lich-ha-long-1.jpg" data-time-start="Thứ 5 và thứ 7 hàng tuần">
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://statics.vinpearl.com/hinh-anh-kinh-nghiem-du-lich-ha-long-1.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Cà Mau - Quảng Ninh
+                                </h2>
+                        
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Cà Mau</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(12)">Đặt ngay</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
 
                 </div>
-            </div>
-        </div>
 
-        <div class="deal">
-            <div class="deal__card">
-
-            </div>
-        </div>
-        <div class="feedback">
-            <div class="feedback__title">
-                Phản hồi từ khách hàng
-            </div>
-            <div class="feedback__content">
-                <div class="feedback__content--card">
-                    Phản hồi 1
-                </div>
-                <div class="feedback__content--card">
-                    Phản hồi 2
-                </div>
             </div>
         </div>
 
         <div class="footer">
-            Kết nối với chúng tôi 
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a href="http://pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="footer__title">
+                        Bài tập nhóm CT188
+                    </h2>
+                    <ul class="footer__content">
+                        <li class="footer__content--li">
+                            <b>Phiên bản:</b> 1.0
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Dev:</b> Le Van Dat, Vo Tuyet Ha
+                        </li>
+                        <li class="footer__content--li">
+                            <p>Trang web này sử dụng hoàn toàn bằng HTML và CSS/JavaScript thuần (ngoại trừ các icon sử dụng của thư viện Font Awesome). Trong quá trình thực hiện nhóm có tham khảo ý tưởng, hướng dẫn tại các trang web như: dulichviet.com.vn, w3school, developer.mozilla.org, stackoverflow.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h2 class="footer__title">
+                        Liên hệ
+                    </h2>
+                    <ul class="footer__content">
+                        <li class="footer__content--li">
+                            <b>Nhóm:</b> 8
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Email:</b>
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fas fa-envelope"></i> datb2012191@student.ctu.edu.vn
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fas fa-envelope"></i> hab2014567@student.ctu.edu.vn
+                        </li>
+                        <li class="footer__content--li">
+                            <b>Source Code</b>
+                        </li>
+                        <li class="footer__content--li">
+                            <i class="fab fa-github"></i> <a href="https://github.com/lvdat/ct188_nhom8">https://github.com/lvdat/ct188_nhom8</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <a href="#content" id="top_back" onclick="scrollToTop();return false"><i class="fas fa-arrow-up"></i>TOP</a>
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/slide.js"></script>
+        <div class="footer__copyright">
+            2021 © Le Van Dat & Vo Tuyet Ha
+        </div>
     </body>
 </html></body>
 
