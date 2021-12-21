@@ -85,6 +85,7 @@
                         </div>
                         <a href="" class="header__content--search__user login" title="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a> 
                         <a href="" class="header__content--search__user register" title="Đăng ký"><i class="fas fa-user-plus"></i></a>
+                        <a href="" class="header__content--search__user cart" title="GIỎ HÀNG"><i class="fas fa-heart"></i></i><span class="cart-count" id="cart-count"></span></a>
                     </form>
                 </div>
                 <a href="javascript:void(0);" class="header__content--toogle" onclick="nav_toogle()">
@@ -117,53 +118,89 @@
         <div class="categories">
             <div class="categories__element">
                 <div class="categories__element--content">
-                    <div class="categories__element--content__title"> du lịch xuyên việc </div>
-                    <div class="categories__element--content__detail">
-                        <div class="infor__tour">
-                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/hue/non%20bai%20tho/Cau_Truong_Tien_Song_Huong-cr-215x150.jpeg" alt="" class="infor__tour--img">
-                            <h2 class="infor__tour--address">
-                               Tour Sài Gòn - Miền Trung
-                            </h2>
-                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 5 và thứ 7 hàng tuần</p>
-                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
-                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
-                            
-                            <div class="submit">
-                                <button>Đặt ngay</button>
+                    <div class="categories__element--content__title"> du lịch xuyên việt </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Sài Gòn - Miền Trung
+                                </h2>
+
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Sài Gòn</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(1)">Đặt ngay</button>
+                                </div>
                             </div>
-
                         </div>
-                         <div class="infor__tour">
-                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Ha%20Noi/PLG8FA1MW2_OM180M1FYJ_ho-hoan-kiem-cr-215x150.jpg" alt="" class="infor__tour--img">
-                            <h2 class="infor__tour--address">
-                               Tour Sài Gòn - Hà Nội
-                            </h2>
-                            <p><i class="far fa-calendar"></i>Khởi hành:Thứ 2 và thứ 6 hàng tuần</p>
-                            <p><i class="far fa-clock"></i>Thời gian:1 tuần</p>
-                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Đà Nẵng - Miền Nam" data-img="https://media-cdn.laodong.vn/storage/newsportal/2020/4/28/801886/1-5.jpg" >
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://media-cdn.laodong.vn/storage/newsportal/2020/4/28/801886/1-5.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Đà Nẵng - Miền Nam
+                                </h2>
 
-                            <div class="submit">
-                                <button>Đặt ngay</button>
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 6 và Chủ Nhật hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Đà Nẵng</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(2)">Đặt ngay</button>
+                                </div>
                             </div>
-
                         </div>
-                        <div class="infor__tour">
-                            <img src="https://www.vietfuntravel.com.vn/image/cache/data/Mekong/cho_noi_cai_be_7-cr-215x150.jpg" alt="" class="infor__tour--img">
-                            <h2 class="infor__tour--address">
-                               Tour Sài Gòn - Miền Tây
-                            </h2>
-                            <p><i class="far fa-calendar"></i>Khởi hành: Thứ 4 và chủ nhật</p>
-                            <p><i class="far fa-clock"></i>Thời gian: 1 tuần</p>
-                            <p><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:Sài gòn</p>
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Sài Gòn - Miền Trung
+                                </h2>
 
-                            <div class="submit">
-                                <button>Đặt ngay</button>
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Sài Gòn</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(3)">Đặt ngay</button>
+                                </div>
                             </div>
-
                         </div>
-                        
+                        <div class="col-3">
+                            <div class="xuyenviet__card" id="xuyenviet__card" data-name="Tour Sài Gòn - Miền Trung" data-img="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" >
+                                <div class="xuyenviet__card--header">
+                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/puqgfdmzs.co/2019_10_21/haiphong/anh3_rpqk.jpg" alt="" class="xuyenviet__card--header__img">
+                                </div>
+                                <h2 class="xuyenviet__card--title">
+                                    Tour Sài Gòn - Miền Trung
+                                </h2>
+
+                                <div class="xuyenviet__card--info">
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-calendar"></i>Khởi hành:</b> Thứ 5 và thứ 7 hàng tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="far fa-clock"></i>Thời gian:</b> 1 tuần</li>
+                                    <li class="xuyenviet__card--info__li"><b><i class="fas fa-map-marker-alt"></i>Địa điểm khởi hành:</b> Sài Gòn</li>
+                                </div>
+                                
+                                <div class="xuyenviet__card--order">
+                                    <button class="xuyenviet__card--order__btn" id="xuyenviet__card--order__btn" onclick="addCart(4)">Đặt ngay</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
                 <div class="categories__element--content">
                     <div class="categories__element--content__title">combo du lịch</div>
@@ -318,7 +355,7 @@
         </div>
         <a href="#content" id="top_back" onclick="scrollToTop();return false"><i class="fas fa-arrow-up"></i>TOP</a>
         <script src="/assets/js/main.js"></script>
-        <script src="/assets/js/slider.js"></script>
+        <script src="/assets/js/slide.js"></script>
     </body>
 </html></body>
 

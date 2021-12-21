@@ -12,6 +12,7 @@ Author: Le Van Dat, Vo Tuyet Ha.
     --black: #000;
     --facebook: #3B5998;
     --google: #dd4b39;
+    --green: #448c24;
 }
 
 /* scroll bar */
@@ -49,6 +50,16 @@ body{
     background-color: white;
     height: auto;
 }
+.col-3{
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.col-4 {
+    /* chia 3 */
+    float: left;
+    width: 33.33%;
+}
 .col-6{
     float: left;
     width: 50%;
@@ -85,6 +96,13 @@ body{
     .col{
         width: 100%;
         height: auto;
+    }
+    .col-3{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .col-4 {
+        width: 100%;
     }
     .col-6{
         width: 100%;
@@ -198,8 +216,9 @@ body{
 }
 .header__content--search__user{
     color: black;
-    margin-left: 14px;
+    margin-left: 16px;
     text-decoration: none;
+    font-weight: 400;
 }
 .header__content--search__form{
     display: inline;
@@ -257,6 +276,9 @@ body{
     .header__content--search__user.register::after{
         content: ' ĐĂNG KÝ'
     }
+    .header__content--search__user.cart::after{
+        content: ' YÊU THÍCH'
+    }
 }
 @media screen and (max-width: 800px){
     body{
@@ -302,11 +324,9 @@ body{
         -webkit-overflow-scrolling: touch;
         border: 1px solid var(--pink);
     }
-}
-
-
-.header__content--search__user{
-    font-weight: 300;
+    .header__content--search__user{
+        margin-left: 3px;
+    }
 }
 
 .header__content--search__form{
@@ -330,7 +350,12 @@ body{
     padding: 14px 16px;
     color: #000;
 }
-
+.cart-count{
+    padding: 1px 5px;
+    background-color: var(--pink);
+    border-radius: 50%;
+    color:var(--white);
+}
 
 
 .categories__title{
@@ -425,14 +450,28 @@ body{
     background-color: #717171;
 }
 .categories__element--content__detail{
-    display: flex;
     justify-content: space-between;
 }
 
 .infor__tour{
-    width: 32%;
     border: 1px solid rgba(0, 0, 0,0.5);
     border-radius: 8px;
+}
+@media screen and (min-width: 801px) {
+    .categories__element--content__detail{
+        display: flex;
+    }
+    .infor__tour {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .categories__element--content__detail{
+        display: block;
+    }
+    .infor__tour {
+        width: 100%;
+    }
 }
 
 .infor__tour img{
@@ -603,6 +642,8 @@ body{
     outline: none;
     /* display: none;*/
     color: #fff;
+    opacity: 0;
+    transition: 0.5s ease;
 }
 
 /* Login, Register */
@@ -669,6 +710,11 @@ input[type=submit].account__form--btn{
     left: 50%;
     transform: translate(-50%);
     border: 2px solid #ddd;
+}
+.account__form--vl.login{
+    height: 180px;
+}
+.account__form--vl.reg{
     height: 400px;
 }
 .account__form--hide__md-lg{
@@ -707,4 +753,72 @@ input[type=submit].account__form--btn{
         margin-top: 1em;
         margin-bottom: 1em;
     }
+}
+
+/* test area */
+
+.xuyenviet__card{
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+.xuyenviet__card:hover{
+    border: 2px solid var(--pink);
+}
+.xuyenviet__card--header{
+    width: 100%;
+    max-height: 200px;
+    display: block;
+    padding: 0;
+}
+.xuyenviet__card--header__img{
+    width: 100%;
+    max-width: 100%;
+    height: 190px;
+}
+.xuyenviet__card:hover .xuyenviet__card--header__img{
+    border-bottom: 2px solid var(--pink);
+}
+h2.xuyenviet__card--title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 8px;
+    color: var(--pink);
+}
+.xuyenviet__card--info{
+    margin: 10px;
+}   
+.xuyenviet__card--info__li {
+    list-style-type: none;
+    line-height: 1.4em;
+}
+.xuyenviet__card--info__li b {
+    font-weight: bold;
+}
+.xuyenviet__card--order{
+    text-align: right;
+    padding: 10px;
+}
+.xuyenviet__card--order__btn {
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--pink);
+    color: var(--white);
+    transition: 0.3s ease;
+    opacity: 0.8;
+}
+.xuyenviet__card--order__btn:hover{
+    opacity: 1;
+}
+@media screen and (min-width: 801px){
+    .xuyenviet__card{
+        
+    }
+}
+@media screen and (max-width: 800px){
+    
 }
