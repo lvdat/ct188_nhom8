@@ -730,14 +730,6 @@ h2.xuyenviet__card--title {
 .xuyenviet__card--order__btn:hover{
     opacity: 1;
 }
-@media screen and (min-width: 801px){
-    .xuyenviet__card{
-        
-    }
-}
-@media screen and (max-width: 800px){
-    
-}
 
 /* Love list */
 #love{
